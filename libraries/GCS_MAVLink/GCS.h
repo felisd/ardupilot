@@ -378,7 +378,7 @@ protected:
     struct {
         int64_t sent_ts1;
         uint32_t last_sent_ms;
-        const uint16_t interval_ms = 10000;
+        const uint16_t interval_ms = 1000;
     }  _timesync_request;
 
     void handle_statustext(const mavlink_message_t &msg);
